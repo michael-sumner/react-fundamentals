@@ -28,7 +28,11 @@
     const rootElement = document.getElementById('root')
     const element = React.createElement('h1', {
       className: 'container',
-      children: 'Hello World!!',
+      children: [
+        React.createElement('span', null, 'Hello'),
+        ' ',
+        React.createElement('span', null, 'World!!'),
+      ],
     })
     ReactDOM.createRoot(rootElement).render(element)
   </script>
